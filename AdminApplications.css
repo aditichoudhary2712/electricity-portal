@@ -1,0 +1,33 @@
+.applications-container{
+    padding:30px;
+}
+
+.page-title{
+    font-size:30px;
+    color:#1d4ed8;
+    margin-bottom:20px;
+}
+
+.search-box{
+    width:350px;
+    padding:10px;
+    margin-bottom:20px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table th,
+.table td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+.table th{
+    background:#2563eb;
+    color:white;
+}

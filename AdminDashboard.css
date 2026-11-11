@@ -1,0 +1,358 @@
+.admin-container {
+
+    padding: 40px;
+
+    background-color: #f4f6f9;
+
+    min-height: 100vh;
+}
+
+.admin-container h1 {
+
+    text-align: center;
+
+    color: #1e3a8a;
+
+    margin-bottom: 40px;
+}
+
+.admin-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.admin-card{
+
+    min-height:190px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    color:white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+.admin-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.25);
+
+}
+
+.admin-card h1{
+
+    color:white;
+
+    font-size:60px;
+
+    font-weight:bold;
+
+    margin:10px 0;
+
+}
+.admin-card h2{
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.admin-card p{
+
+    color:white;
+
+    opacity:.9;
+
+    font-size:15px;
+
+}
+
+.dashboard-header{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.dashboard-header h1{
+    color:#1e40af;
+    font-size:38px;
+    margin-bottom:8px;
+}
+
+.dashboard-header p{
+    color:#64748b;
+    font-size:18px;
+}
+
+.dashboard-date{
+    margin-top:10px;
+    font-size:16px;
+    color:#475569;
+    font-weight:600;
+}
+
+
+/* ---------- Dashboard Card Colors ---------- */
+
+.total-card{
+    background: linear-gradient(135deg,#2563eb,#3b82f6);
+}
+
+.pending-card{
+    background: linear-gradient(135deg,#f59e0b,#fb923c);
+}
+
+.approved-card{
+    background: linear-gradient(135deg,#16a34a,#22c55e);
+}
+
+.rejected-card{
+    background: linear-gradient(135deg,#dc2626,#ef4444);
+}
+
+.hold-card{
+    background: linear-gradient(135deg,#7c3aed,#8b5cf6);
+}
+
+.ai-card{
+    background: linear-gradient(135deg,#0f172a,#334155);
+}
+
+
+
+.dashboard-bottom{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:40px;
+}
+
+.recent-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.trend-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    height:420px;
+}
+.trend-card canvas{
+
+width:100% !important;
+
+height:430px !important;
+
+}
+
+
+/* ---------------- Recent Applications Table ---------------- */
+
+.recent-card table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.recent-card th{
+    background:#2563eb;
+    color:white;
+    padding:16px;
+    font-size:16px;
+    font-weight:700;
+    text-align:center;
+}
+
+.recent-card td{
+    padding:18px 14px;
+    border-bottom:1px solid #edf2f7;
+    text-align:center;
+    font-size:16px;
+    color:#1e293b;
+}
+
+.recent-card tbody tr:hover{
+    background:#f8fafc;
+}
+
+
+.view-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:700;
+    font-size:15px;
+    transition:.3s;
+}
+
+.view-btn:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+.view-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ---------- New Card Design ---------- */
+
+
+.card-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    width:100%;
+
+}
+.card-icon{
+
+    width:82px;
+
+    height:82px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.22);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    flex-shrink:0;
+
+}
+
+.card-title{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    line-height:1.4;
+
+}
+
+.card-value{
+
+    font-size:62px;
+
+    font-weight:800;
+
+    text-align:center;
+
+    margin:15px 0;
+
+}
+
+.card-text{
+
+    text-align:center;
+
+    font-size:18px;
+
+    opacity:.95;
+
+}
+
+/* ---------- Recent Header ---------- */
+
+.recent-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.recent-header h2{
+    margin:0;
+    color:#0f172a;
+    font-size:28px;
+    font-weight:700;
+}
+
+.view-all-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.view-all-btn:hover{
+    background:#1d4ed8;
+}
+
+
+/* ---------- Status Badges ---------- */
+
+.status-badge{
+    display:inline-block;
+    min-width:90px;
+    text-align:center;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.status-badge.approved{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status-badge.pending{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.status-badge.rejected{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.status-badge.hold{
+    background:#ede9fe;
+    color:#7c3aed;
+}
